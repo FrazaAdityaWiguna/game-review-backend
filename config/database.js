@@ -1,7 +1,5 @@
-const path = require('path');
-const parse = require('pg-connection-string').parse;
-const config = parse(process.env.DATABASE_URL);
-
+// local
+// const path = require('path');
 // module.exports = ({ env }) => ({
 //   connection: {
 //     client: 'sqlite',
@@ -12,6 +10,10 @@ const config = parse(process.env.DATABASE_URL);
 //   },
 // });
 
+
+// production
+const parse = require('pg-connection-string').parse;
+const config = parse(process.env.DATABASE_URL);
 module.exports = ({ env }) => ({
   connection: {
     client: 'postgres',

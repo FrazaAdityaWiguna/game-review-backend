@@ -17,10 +17,11 @@
       "unique": true
     },
     "rating": {
-      "type": "integer",
+      "type": "float",
       "required": true,
-      "min": 1,
-      "max": 10
+      "default": 0,
+      "max": 10,
+      "min": 0
     },
     "body": {
       "type": "richtext",

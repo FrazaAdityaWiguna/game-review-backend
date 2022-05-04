@@ -9,6 +9,7 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
+  "devDependencies": {},
   "dependencies": {
     "@strapi/plugin-i18n": "4.1.9",
     "@strapi/plugin-users-permissions": "4.1.9",
@@ -21,7 +22,7 @@
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "77bb4420-5f91-4220-9ed1-09cdc7d677dd"
+    "uuid": "b2bf700a-e3fa-418f-8ad3-71cf96a48746"
   },
   "engines": {
     "node": ">=12.x.x <=16.x.x",

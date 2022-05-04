@@ -22,9 +22,12 @@ module.exports = ({ env }) => ({
       user: config.user,
       password: config.password,
       ssl: {
-        rejectUnauthorized: false
+        rejectUnauthorized: env.bool('DATABASE_SSL_SELF', false)
       },
     },
     debug: false,
+    options: {
+      ssl: env.bool('DATABASE_SSL', false),
+    },
   },
 });

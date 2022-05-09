@@ -1,0 +1,12 @@
+query GetReviews {
+    reviews {
+      data {
+          id
+      attributes {
+        title
+        rating
+        body
+            }
+        }
+    }
+}
